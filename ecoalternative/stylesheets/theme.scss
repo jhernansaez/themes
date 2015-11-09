@@ -17,7 +17,7 @@ $change-wireframe: true !default;
 body {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;
-  background: url(/designs/themes/cirandas-responsive/images/bg.png);
+  background: url(/designs/themes/ecoalternative/images/bg.png);
 }
 
 .block a,
@@ -103,7 +103,7 @@ body p {
   #footer-fbes {
     background-position: left 25px 0;
     background-repeat: no-repeat;
-    background-image: url('/designs/themes/cirandas-responsive/images/cirandas-logo-110.png');
+    //background-image: url('/designs/themes/ecoalternative/images/cirandas-logo-110.png');
     background-size: 50px auto;
     height: 40px;
   }
@@ -261,19 +261,6 @@ body p {
   font-style: italic;
 }
 
-#user .logged-in {
-  height: 16px;
-  overflow: hidden;
-  display: block;
-  background: transparent url(/designs/themes/cirandas/images/submenu.png) 230px 4px no-repeat;
-}
-
-#user .logged-in:hover {
-  overflow: visible;
-  height: auto;
-  background-image: url(/designs/themes/cirandas/images/submenu-up.png);
-}
-
 #user .logged-in a {
   display: block;
   margin: 0;
@@ -363,18 +350,6 @@ body p {
   color: inherit;
 }
 
-#header-help {
-  position: absolute;
-  top: 72px;
-  left: 683px;
-  width: 40px;
-}
-#header-help a,
-#header-help a:hover {
-  background: transparent url(/designs/themes/cirandas/images/help.png) top center no-repeat;
-  width: 40px;
-}
-
 /* Forms */
 
 .formfield input, .formfield textarea {
@@ -417,11 +392,6 @@ body p {
 
 .menu-submenu-header {
   background: transparent;
-}
-
-.menu-submenu-footer {
-  background: transparent url(/designs/themes/cirandas/images/balloon-blue.png) 92px top no-repeat;
-  height: 6px;
 }
 
 /* Content */
@@ -517,7 +487,7 @@ body p {
   display: block;
   left: auto;
   right: -3px;
-  background-image: url(/designs/themes/cirandas/images/submenu-up.png);
+  background-image: url(/designs/themes/ecoalternative/images/submenu-up.png);
 }
 
 .action-profile-friends .main-block .common-profile-list-block .vcard .menu-submenu,
@@ -532,7 +502,7 @@ body p {
 }
 
 .common-profile-list-block .vcard .menu-submenu-trigger:hover, .menu-submenu-trigger:hover {
-  background-image: url(/designs/themes/cirandas/images/submenu-hover-up.png);
+  background-image: url(/designs/themes/ecoalternative/images/submenu-hover-up.png);
 }
 
 .action-friends-index .profile-list li, .common-profile-list-block .vcard {
@@ -643,7 +613,7 @@ body p {
 .highlights-label {
   padding-left: 5px;
   font-weight: bold;
-  background-image: url(/designs/themes/cirandas/images/blue-alpha-pixel.png);
+  background-image: url(/designs/themes/ecoalternative/images/blue-alpha-pixel.png);
 }
 
 .highlights-block a {
@@ -741,7 +711,7 @@ body p {
 }
 
 #content .login-block .not-logged-user input.button.with-text {
-  background: black url(/designs/themes/cirandas/images/login.png) 50px center no-repeat;
+  background: black url(/designs/themes/ecoalternative/images/login.png) 50px center no-repeat;
   padding: 5px 43px 7px 4px;
   color: white;
   font-weight: normal;
@@ -951,7 +921,7 @@ body p {
 #content .news-area a.news-see-more {
   padding-bottom: 1px;
   color: #333;
-  background-image: url(/designs/themes/cirandas/images/raquo.png);
+  background-image: url(/designs/themes/ecoalternative/images/raquo.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -1410,11 +1380,11 @@ form#category_form input.button.with-text {
 
 #chat .small-loading-dark {
   /* thanks http://www.loadinfo.net for loading gif generator */
-  background-image: url(/designs/themes/cirandas/images/loading-small.gif);
+  background-image: url(/designs/themes/ecoalternative/images/loading-small.gif);
 }
 
 #buddy-list {
-  background-image: url(/designs/themes/cirandas/images/bg-bw.png);
+  background-image: url(/designs/themes/ecoalternative/images/bg-bw.png);
 }
 
 #buddy-list .buddy-list li a {
@@ -1509,7 +1479,7 @@ div#article.forum #addThis {
 #article td.forum-post-answers {
   height: 56px;
   width: 11%;
-  background-image: url(/designs/themes/cirandas/images/forum-answers-bg.png);
+  background-image: url(/designs/themes/ecoalternative/images/forum-answers-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   font-weight: normal;

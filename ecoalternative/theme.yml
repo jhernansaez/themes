@@ -1,5 +1,5 @@
-name: "Cirandas"
-layout: "cirandas-responsive"
+name: "EcoAlternative"
+layout: "ecoalternative"
 jquery_theme: "smoothness"
 responsive: true
 icon_theme: [awesome, pidgin]

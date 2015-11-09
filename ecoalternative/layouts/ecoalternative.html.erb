@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
 
     <!-- externals come first for parallelism -->
-    <%# render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? and not @disable_purechat %>
+    <%# render file: "#{Rails.root}/public/designs/themes/ecoalternative/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%# render file: "#{Rails.root}/public/designs/themes/ecoalternative/layouts/_purechat.html.erb" if Rails.env.production? and not @disable_purechat %>
 
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
@@ -26,7 +26,7 @@
     %>
   </head>
 
-  <%= render file: "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
+  <%= theme_include 'load.erb' %>
 
   <body class="<%= h body_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
