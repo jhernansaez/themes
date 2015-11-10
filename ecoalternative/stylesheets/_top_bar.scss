@@ -36,8 +36,10 @@
   #top-bar .navbar-brand, #top-bar .container .navbar-brand,
   #top-bar > .container-fluid .navbar-brand {
     font-size: 18px;
-    color: rgba(117, 185, 97, 1);
-    text-shadow: 2px 2px 2px #222;
+    /*color: rgba(117, 185, 97, 1);
+    text-shadow: 2px 2px 2px #222;*/
+    color: transparent;
+    text-shadow: none;
   }
   #top-bar .navbar-brand, #top-bar .container .navbar-brand:hover,
   #top-bar > .container-fluid .navbar-brand:hover {
