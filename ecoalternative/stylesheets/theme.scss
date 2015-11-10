@@ -1571,3 +1571,11 @@ div#addThis {
   line-height: 120%;
 }
 
+// Redundant with base-responsive:
+#content .no-boxes h1 {
+  font-variant:none;
+}
+#search-filters .form-control {
+    display: inline-block;
+    width: auto;
+}
