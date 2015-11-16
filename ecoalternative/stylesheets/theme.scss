@@ -1579,3 +1579,11 @@ div#addThis {
     display: inline-block;
     width: auto;
 }
+// Undo application.css:
+.sellers-search-block .search-distance-opt {
+  padding:0;
+  font-size: inherit;
+}
+.sellers-search-block .search-distance-opt label {
+  padding-right:5px;
+}
