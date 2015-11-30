@@ -67,6 +67,10 @@ body p {
 }
 
 /* Footer */
+.footer-wrap {
+    background-color: #333;
+    color: #8C8989;
+}
 
 #theme-footer {
   border-radius: 0 0 10px 10px;
@@ -100,19 +104,11 @@ body p {
 
   }
 
-  #footer-fbes {
-    background-position: left 25px 0;
-    background-repeat: no-repeat;
-    //background-image: url('/designs/themes/ecoalternative/images/cirandas-logo-110.png');
-    background-size: 50px auto;
-    height: 40px;
-  }
-
   a {
-    color: $light-link-color;
-    text-decoration: underline;
+    color: #8C8989;
+    text-decoration: none;
     :hover {
-      color: darken($light-link-color,6.5%);
+      color: #fff;
       text-decoration: none;
     }
   }
