@@ -774,6 +774,10 @@ body p {
   text-decoration: underline;
 }
 
+.profile_link span.org {
+  max-height:24px;
+}
+
 .action-friends-index .profile-list li:hover,
 .common-profile-list-block .vcard:hover {
   border: 1px solid #E67817;
