@@ -71,6 +71,26 @@ body p {
     background-color: #333;
     color: #8C8989;
 }
+.footer-wrap h2 span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-right: 10px;
+    color: #FFF;
+    background-color: #333;
+}
+.footer-wrap h2 {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-position: right center;
+    background-image: url("http://www.ecoalternativa.net/wp-content/themes/javo-directory/assets/images/divider1.png");
+    border: medium none;
+}
 
 #theme-footer {
   border-radius: 0 0 10px 10px;
