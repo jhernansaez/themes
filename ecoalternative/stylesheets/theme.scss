@@ -72,6 +72,9 @@ body p {
     color: #8C8989;
     padding: 60px 0;
 }
+.footer-wrap li {
+    list-style-type: none;
+}
 .footer-wrap h2 span {
     color: #FFF;
     text-transform: uppercase;
@@ -92,65 +95,20 @@ body p {
     background-image: url("http://www.ecoalternativa.net/wp-content/themes/javo-directory/assets/images/divider1.png");
     border: medium none;
 }
-
 #theme-footer {
-  border-radius: 0 0 10px 10px;
   border-top: 2px solid black;
-
-  #footer-content {
-    margin: 0 auto;
-    background: #eee;
-    border-radius: 0 0 10px 10px;
-
-    #footer-left, #footer-middle, #footer-right {
-      width: $module04;
-      margin-right: $margin;
-      float: left;
-    }
-
-    #footer-left {
-
-      #language-chooser {
-        margin: 0;
-        text-align: left;
-      }
-    }
-
-    #footer-middle {
-
-      p {
-        text-align: center;
-      }
-    }
-
-  }
-
   a {
     color: #8C8989;
     text-decoration: none;
-    :hover {
-      color: #fff;
-      text-decoration: none;
-    }
   }
-  p {
-    margin: 0;
+  a:hover {
+    color: #fff;
+    text-decoration: none;
   }
 }
 
 /* --- footer - mobile -- */
 @media screen and (max-width: 767px) {
-  #theme-footer #language-chooser {
-    text-align: center !important;
-  }
-
-  #noosfero-version-info {
-    text-align: center;
-  }
-
-  #footer-fbes {
-    text-align: center;
-  }
 }
 
 
