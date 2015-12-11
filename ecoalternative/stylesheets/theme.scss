@@ -1556,7 +1556,7 @@ div#addThis {
 
 // Redundant with base-responsive:
 #content .no-boxes h1 {
-  font-variant:none;
+  font-variant:normal;
 }
 #search-filters .form-control {
     display: inline-block;
@@ -1572,4 +1572,23 @@ div#addThis {
 }
 #content .sellers-search-block h3 {
   display:none;
+}
+// Shits from core...
+#content .main-block h1,
+#not-found h1,
+#access-denied h1 {
+  font-variant: normal;
+}
+#content .block h2,
+#content .block-title {
+  font-variant: normal;
+}
+#content .login-block .not-logged-user h2 {
+  font-variant: normal;
+}
+#content #highlighted-news h2 {
+  font-variant: normal;
+}
+#content .blog-post .title {
+  font-variant: normal;
 }
