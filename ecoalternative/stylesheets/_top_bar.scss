@@ -43,7 +43,7 @@
   }
   #top-bar .navbar-brand, #top-bar .container .navbar-brand:hover,
   #top-bar > .container-fluid .navbar-brand:hover {
-    color: #fff;
+    color: transparent;
   }
   #top-search .form-group, #top-search .form-group .form-control {
     width: 120px;
@@ -74,22 +74,13 @@
   margin: 0;
 }
 
-#top-bar .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
-
-#top-bar .navbar-toggle {
-  border: none;
-  margin-right: 10px;
-}
-
-#top-bar .navbar-toggle .icon-bar {
+/*#top-bar .navbar-toggle .icon-bar {
   width: 18px;
-}
+}*/
 
-#top-bar .navbar-toggle:hover, #top-bar .navbar-toggle:focus {
+/*#top-bar .navbar-toggle:hover, #top-bar .navbar-toggle:focus {
   background-color: rgba(118, 177, 103, 1);
-}
+}*/
 
 
 @media screen and (min-width:1200px) {

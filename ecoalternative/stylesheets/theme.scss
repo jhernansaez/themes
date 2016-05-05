@@ -10,7 +10,7 @@ $bootstrap-loaded: true;
 @import 'page-title';
 
 /* configurations */
-$style-headers: true !default;
+$style-headers: false !default;
 $change-wireframe: true !default;
 
 /* Globals */
@@ -20,10 +20,10 @@ body {
   //background: url(/designs/themes/ecoalternative/images/bg.png);
 }
 
-.block a,
+/*.block a,
 a {
   color: $link-color;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .block, .no-boxes {
@@ -67,73 +67,52 @@ body p {
 }
 
 /* Footer */
-
+.footer-wrap {
+    background-color: #333;
+    color: #8C8989;
+    padding: 60px 0;
+}
+.footer-wrap ul {
+  padding-left: 3px;
+  font-size: 15px;
+}
+.footer-wrap li {
+    list-style-type: none;
+}
+.footer-wrap h2 span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-right: 10px;
+    color: #FFF;
+    background-color: #333;
+}
+.footer-wrap h2 {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-position: right center;
+    background-image: url("http://www.ecoalternativa.net/wp-content/themes/javo-directory/assets/images/divider1.png");
+    border: medium none;
+}
 #theme-footer {
-  border-radius: 0 0 10px 10px;
   border-top: 2px solid black;
-
-  #footer-content {
-    margin: 0 auto;
-    background: #eee;
-    border-radius: 0 0 10px 10px;
-
-    #footer-left, #footer-middle, #footer-right {
-      width: $module04;
-      margin-right: $margin;
-      float: left;
-    }
-
-    #footer-left {
-
-      #language-chooser {
-        margin: 0;
-        text-align: left;
-      }
-    }
-
-    #footer-middle {
-
-      p {
-        text-align: center;
-      }
-    }
-
-  }
-
-  #footer-fbes {
-    background-position: left 25px 0;
-    background-repeat: no-repeat;
-    //background-image: url('/designs/themes/ecoalternative/images/cirandas-logo-110.png');
-    background-size: 50px auto;
-    height: 40px;
-  }
-
   a {
-    color: $light-link-color;
-    text-decoration: underline;
-    :hover {
-      color: darken($light-link-color,6.5%);
-      text-decoration: none;
-    }
+    color: #8C8989;
+    text-decoration: none;
   }
-  p {
-    margin: 0;
+  a:hover {
+    color: #fff;
+    text-decoration: none;
   }
 }
 
 /* --- footer - mobile -- */
 @media screen and (max-width: 767px) {
-  #theme-footer #language-chooser {
-    text-align: center !important;
-  }
-
-  #noosfero-version-info {
-    text-align: center;
-  }
-
-  #footer-fbes {
-    text-align: center;
-  }
 }
 
 
@@ -555,7 +534,7 @@ body p {
 #content .communities-block .common-profile-list-block li {
   margin: 1px;
   height: 80px;
-  width: 80px;
+  //width: 80px;
 }
 
 #content .friends-block .common-profile-list-block li,
@@ -772,6 +751,10 @@ body p {
   line-height: 12px;
   color: $link-color;
   text-decoration: underline;
+}
+
+.profile_link span.org {
+  height: 24px;
 }
 
 .action-friends-index .profile-list li:hover,
@@ -1551,13 +1534,13 @@ div#addThis {
   width: 400px;
 }
 
-.navbar-default {
+/*.navbar-default {
   color: white;
 }
 
 .navbar-default a {
   color: #9cbcce;
-}
+}*/
 
 .navbar-static-bottom {
   margin-bottom: 0px !important;
@@ -1573,9 +1556,40 @@ div#addThis {
 
 // Redundant with base-responsive:
 #content .no-boxes h1 {
-  font-variant:none;
+  font-variant:normal;
 }
 #search-filters .form-control {
     display: inline-block;
     width: auto;
+}
+// Undo application.css:
+.sellers-search-block .search-distance-opt {
+  padding: 0 0 3px 0;
+  font-size: inherit;
+}
+.sellers-search-block .search-distance-opt label {
+  padding-right:5px;
+}
+#content .sellers-search-block h3 {
+  display:none;
+}
+// Shits from core...
+#content .main-block h1,
+#not-found h1,
+#access-denied h1 {
+  font-variant: normal;
+  border: none;
+}
+#content .block h2,
+#content .block-title {
+  font-variant: normal;
+}
+#content .login-block .not-logged-user h2 {
+  font-variant: normal;
+}
+#content #highlighted-news h2 {
+  font-variant: normal;
+}
+#content .blog-post .title {
+  font-variant: normal;
 }
