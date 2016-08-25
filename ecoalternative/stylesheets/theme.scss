@@ -1594,7 +1594,12 @@ div#addThis {
   font-variant: normal;
 }
 
-/* New styles from /products*/
+/* New styles from products*/
 .categories_container select {
   width:inherit;
+}
+
+/* control panel */ 
+.controller-profile_editor .control-panel a {
+  line-height:110%;
 }
