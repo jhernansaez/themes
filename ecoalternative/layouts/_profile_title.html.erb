@@ -12,7 +12,7 @@
       
       <a href="<%= url_for(profile.url) %>"><%= profile.short_name(nil) %></a>
       
-      <% parent = Enterprise.parent(profile).first %>
+      <% parent = Enterprise.parents(profile).first %>
       <% if profile.enterprise? && parent.present? %>
         <span class="solidarity-economy"><%= _('Part of network') %> <a href="<%= url_for parent.url %>"><%= parent.short_name %></a></span>
       <% end %>
