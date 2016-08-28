@@ -3,7 +3,22 @@
 	  <div class="container">
 		  <div class="row">
 			  <div class="col-md-3">
-			  	<%= language_chooser(environment) %>
+				<div class="row widgets-wraps">
+					<ul>
+						<li>
+							<%= _('Choose language:') =>
+						</li>
+						<li>
+							<%= language_chooser(environment) %>
+						</li>
+						<li>
+							&nbsp;
+						</li>
+						<li>
+			        		<a href="http://ecoalternativo.net/site/terms"><%= _('Terms of use') =></a>
+						</li>
+					</ul>
+				</div>
 			  </div>
 			  <div class="col-md-6"></div>
 			  <div class="col-md-3">
