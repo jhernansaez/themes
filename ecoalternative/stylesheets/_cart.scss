@@ -20,8 +20,9 @@
   padding: 0 5px 0 15px;
   float: left;
 }
-.cart-toggle, .cart-toggle:visited {
+.cart-toggle, .cart-toggle:visited, .cart-toggle:focus {
   color: #fff;
+  text-decoration: none
 }
 .cart-toggle:hover {
   color: #fff;
