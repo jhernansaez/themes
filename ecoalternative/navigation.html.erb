@@ -5,6 +5,11 @@
     [_('About us'), 'http://ecoalternativo.net/'],
     [_('Principles Sheet'), 'http://ecoalternativo.net/site/terms']
   ]
+  about_menus.each do |a|
+    %>
+      <li><a href="<%= a[1] %>"><%= a[0] %></a></li>
+    <%
+  end
 %>
   <li id="navigation-contents"><%= search_contents_menu %></li>
   <li id="navigation-people"><%= search_people_menu %></li>
