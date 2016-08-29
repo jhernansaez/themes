@@ -1,15 +1,11 @@
 <%= cache_unless (logged_in? or @disable_cache_theme_navigation), "ecoalternative/navigation-#{I18n.locale}.html.erb", expires_in: 1.day do %>
 <%
+  // Acá es la ubicación para crear elementos en el dropdown de "sobre":
   about_menus = [
     [_('Terms of use'), 'http://ecoalternativo.net/site/terms'],
     [_('About us'), 'http://ecoalternativo.net/'],
     [_('Principles Sheet'), 'http://ecoalternativo.net/site/terms']
   ]
-  about_menus.each do |a|
-    %>
-      <li><a href="<%= a[1] %>"><%= a[0] %></a></li>
-    <%
-  end
 %>
   <li id="navigation-contents"><%= search_contents_menu %></li>
   <li id="navigation-people"><%= search_people_menu %></li>
@@ -24,6 +20,16 @@
   </li>
   <li id="navigation-communities"><%= search_communities_menu %></li>
   <li id="navigation-events"><%= link_to content_tag('span', _('Events')), {host: environment.default_hostname, action: :events, controller: :search}, {class: 'icon-event', title: 'Eventos'} %></li>
+  <li id="navigation-about">
+    <li class="dropdown">
+      <%= _("About") %>
+      <ul class="dropdown-menu" role="menu">
+        <% about_menus.each do |a| %>
+          <li><a href="<%= a[1] %>"><%= a[0] %></a></li>
+        <% end %>
+      </ul>
+    </li>
+  </li>
 
   <li id="navigation-help"><%# link_to content_tag('span', _('Help')), '//cirandas.net/ajuda', {class: 'icon-help', title: 'Ajuda'} %></li>
 <% end %>
