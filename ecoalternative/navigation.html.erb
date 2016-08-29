@@ -22,7 +22,7 @@
   <li id="navigation-events"><%= link_to content_tag('span', _('Events')), {host: environment.default_hostname, action: :events, controller: :search}, {class: 'icon-event', title: 'Eventos'} %></li>
   <li id="navigation-about">
     <li class="dropdown">
-      <%= link_to content_tag('span', _('About')), '#', {class: ' dropdown-toggle icon-about-us', title: _('About'), :'data-toggle'=>"dropdown", :'data-hover'=>"dropdown"} %>
+      <%= link_to content_tag('span', _('EcoAlternative')), '#', {class: ' dropdown-toggle icon-about-us', title: _('EcoAlternative'), :'data-toggle'=>"dropdown", :'data-hover'=>"dropdown"} %>
       <ul class="dropdown-menu" role="menu">
         <% about_menus.each do |a| %>
           <li><a href="<%= a[1] %>"><%= a[0] %></a></li>
