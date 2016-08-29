@@ -1,6 +1,6 @@
 <%= cache_unless (logged_in? or @disable_cache_theme_navigation), "ecoalternative/navigation-#{I18n.locale}.html.erb", expires_in: 1.day do %>
 <%
-  // Acá es la ubicación para crear elementos en el dropdown de "sobre":
+  # Acá es la ubicación para crear elementos en el dropdown de "sobre":
   about_menus = [
     [_('Terms of use'), 'http://ecoalternativo.net/site/terms'],
     [_('About us'), 'http://ecoalternativo.net/'],
